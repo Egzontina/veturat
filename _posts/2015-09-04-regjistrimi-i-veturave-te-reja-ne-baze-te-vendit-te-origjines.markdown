@@ -4,7 +4,7 @@ img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/izuqud
 category: grafika
 sectionId: "regjistrimi-i-veturave-te-reja-ne-baze-te-vendit-te-origjines"
 title: Grafiku IV
-sharefb: <a href="https://facebook.com/sharer/sharer.php?u=" target="_blank"><i class="fa fa-facebook"> | Share on facebook</i> </a>
+sharefb: <a href="https://facebook.com/sharer/sharer.php?u=http://veturat.institutigap.org/grafika/regjistrimi-i-veturave-te-reja-ne-baze-te-vendit-te-origjines.html" target="_blank"><i class="fa fa-facebook"> | Share on facebook</i> </a>
 description: "<a href=\"grafika/regjistrimi-i-veturave-te-reja-ne-baze-te-vendit-te-origjines.html\">Ky grafikon </a>paraqet importin e veturave të reja në bazë të vendit të origjinës.<br><br>Burimi: Ministria e Punëve të Brendshme."
 published: true
 ---

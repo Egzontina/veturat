@@ -5,7 +5,7 @@ img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/uduteb
 category: grafika
 sectionId: "te-hyrat-doganore-nga-veturat"
 title: Grafiku VI
-sharefb: <a href="https://facebook.com/sharer/sharer.php?u=" target="_blank"><i class="fa fa-facebook"> | Share on facebook</i> </a>
+sharefb: <a href="https://facebook.com/sharer/sharer.php?u=http://veturat.institutigap.org/grafika/te-hyrat-doganore-nga-veturat.html" target="_blank"><i class="fa fa-facebook"> | Share on facebook</i> </a>
 description: "<a href=\"grafika/te-hyrat-doganore-nga-veturat.html\">Ky grafikon </a>paraqet të hyrat doganore nga veturat."
 published: true
 ---

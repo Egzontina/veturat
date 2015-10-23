@@ -4,7 +4,7 @@ img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/edovuh
 category: grafika
 sectionId: "importi-i-veturave-te-perdorura"
 title: Grafiku V
-sharefb: <a href="https://facebook.com/sharer/sharer.php?u=" target="_blank"><i class="fa fa-facebook"> | Share on facebook</i> </a>
+sharefb: <a href="https://facebook.com/sharer/sharer.php?u=http://veturat.institutigap.org/grafika/importi-i-veturave-te-perdorura.html" target="_blank"><i class="fa fa-facebook"> | Share on facebook</i> </a>
 description: "<a href=\"grafika/importi-i-veturave-te-perdorura.html\">Ky grafikon </a> paraqet vendin e origjinës për veturat e përdorura.<br><br>Burimi: Dogana e Kosovës"
 published: true
 ---
