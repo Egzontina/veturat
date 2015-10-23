@@ -4,7 +4,7 @@ img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/eqejez
 category: grafika
 title: Grafiku I
 sharefb: <a href="https://facebook.com/sharer/sharer.php?u=http://veturat.institutigap.org/grafika/regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit.html" target="_blank"><i class="fa fa-facebook "> &nbsp;| Share on facebook</i> </a> 
-sharetw: <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://veturat.institutigap.org/grafika/regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit.html" data-text="Veturat e regjistruara në bazë të vitit të prodhimit." target="_blank"><i class="fa fa-twitter "> | Share on twitter</i> </a> 
+sharetw: <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://veturat.institutigap.org/grafika/regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit.html" data-text="Veturat e regjistruara në bazë të vitit të prodhimit."  data-hashtags="VeturatERegjistruaraNëBazëTëVititTëProdhimit." target="_blank"><i class="fa fa-twitter "> | Share on twitter</i> </a> 
 sectionId: "regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit"
 description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit.html\">Ky grafikon </a> paraqet regjistrimin e veturave në bazë të vitit të prodhimit.<br><br> Burimi: Ministria e Punëve të Brendshme"
 published: true
