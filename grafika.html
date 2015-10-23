@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ <div id="item1"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://example.com/items/1" data-text="Text to share 1">Tweet</a></div>
+<div id="item2"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://example.com/items/2" data-text="Text to share 2">Tweet</a></div>
+<div id="item3"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://example.com/items/3" data-text="Text to share 3">Tweet</a></div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 <body>
 {% for post in site.posts reversed | sort_by: "post.date" %}
 {% if post.category contains 'grafika' %}
@@ -19,7 +25,8 @@ layout: default
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                    {{ post.img }}
-                   {{ post.sharefb }}
+                   {{ post.sharefb }} </br>
+                   {{ post.sharetw }}
                 </div>
                  
             </div>
@@ -42,7 +49,8 @@ layout: default
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                    {{ post.img }}
-                   {{ post.sharefb }}
+                   {{ post.sharefb }} <br/>
+                   {{ post.sharetw }}
                 </div>
             </div>
 

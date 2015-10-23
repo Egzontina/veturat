@@ -4,7 +4,8 @@ img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/igixym
 category: grafika
 sectionId: "regjistrimi-i-veturave-ne-baze-te-firmes"
 title: Grafiku III
-sharefb: <a href="https://facebook.com/sharer/sharer.php?u=http://veturat.institutigap.org/grafika/regjistrimi-i-veturave-ne-baze-te-firmes.html" target="_blank"><i class="fa fa-facebook"> | Share on facebook</i> </a>
+sharefb: <a href="https://facebook.com/sharer/sharer.php?u=http://veturat.institutigap.org/grafika/regjistrimi-i-veturave-ne-baze-te-firmes.html" target="_blank"><i class="fa fa-facebook">&nbsp;| Share on facebook</i> </a>
+sharetw: <a href="#" target="_blank"><i class="fa fa-twitter "> | Share on twitter</i> </a> 
 description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-firmes.html\">Ky grafikon </a>paraqet regjistrimin e veturave në bazë të firmes.<br><br> Burimi: Ministria e Punëve të Brendshme"
 published: true
 ---
