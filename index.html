@@ -7,7 +7,7 @@ published: true
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css"/>
-    <link rel="stylesheet" href="{{ site.baseurl }}/videot/gifv-player.css" type="text/css" />  
+    <link rel="stylesheet" href="{{ site.baseurl }}/videot/gifv-player.css" type="text/css" />
     <style type="text/css">
         .gifv-player {
             display: inline-block;
@@ -19,7 +19,7 @@ published: true
     <![endif]-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/videot/gifv-player.js"></script>
-    <script>   
+    <script>
     function getUrlParameter(sParam) {
         var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
@@ -84,73 +84,73 @@ published: true
         jQuery("a").click(function() {
             var id = jQuery(this).attr("id");
             switch (true) {
-            case (id == 'info1') :  
+            case (id == 'info1') :
                 changebackground('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+'#right-'+id ).show(); 
-                playvideo('.divone');  
+                $('#left-'+id+", "+'#right-'+id ).show();
+                playvideo('.divone');
                 changeicon('left-'+id);
                 $('a').attr("class", "red-tooltip infografika");
                 break;
             case (id == 'info2'):
-                changebackground('left-'+id); 
-                changeicon('left-'+id); 
+                changebackground('left-'+id);
+                changeicon('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
                 $('#left-'+id+", "+ '#right-'+id ).show();
-                $('#info2 img').attr('src',('img/active-02.png')); 
+                $('#info2 img').attr('src',('img/active-02.png'));
                 playvideo('.divtwo');
                 $('a').attr("class", "tooltip2 infografika");
                 break;
             case (id == 'info3'):
-                changebackground('left-'+id);  
+                changebackground('left-'+id);
                 changeicon('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show();  
+                $('#left-'+id+", "+ '#right-'+id ).show();
                 $('a').attr("class", "tooltip3 infografika");
-                playvideo('.divthree'); 
+                playvideo('.divthree');
                 break;
-            case (id == 'info4') : 
+            case (id == 'info4') :
                 changebackground('left-'+id);
-                changeicon('left-'+id); 
+                changeicon('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+'#right-'+id ).show(); 
+                $('#left-'+id+", "+'#right-'+id ).show();
                 playvideo('.divfour');
                 $('a').attr("class", "tooltip4 infografika");
                 break;
             case (id == 'info5'):
                 changebackground('left-'+id );
-                changeicon('left-'+id);  
+                changeicon('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show(); 
+                $('#left-'+id+", "+ '#right-'+id ).show();
                 playvideo('.divfive');
                 $('a').attr("class", "tooltip5 infografika");
                 break;
             case (id == 'info6'):
                 changebackground('left-'+id);
-                changeicon('left-'+id);  
+                changeicon('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
                 $('#left-'+id+", "+ '#right-'+id ).show();
                 playvideo('.divsix');
                 $('a').attr("class", "tooltip6 infografika");
                 break;
             case (id == 'info7'):
-                changebackground('left-'+id); 
-                changeicon('left-'+id); 
+                changebackground('left-'+id);
+                changeicon('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show(); 
+                $('#left-'+id+", "+ '#right-'+id ).show();
                 playvideo('.divseven');
                 $('a').attr("class", "tooltip7");
                 break;
             case (id == 'info8'):
                 changebackground('left-'+id );
-                changeicon('left-'+id);  
+                changeicon('left-'+id);
                 $(".info-right-div, .info-left-div").hide();
                 $('#left-'+id+", "+ '#right-'+id ).show();
                 playvideo('.diveight');
                 $('a').attr("class", "tooltip8");
                 break;
             case(id == 'next'):
-                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                var div1vis = $(".left-div .info-left-div").filter(':visible'),
                     div2vis = $(".right-div .info-right-div").filter(':visible');
                 var id = jQuery(this).attr("id");
                 if (div1vis.next().length > 0 && div2vis.next().length > 0) {
@@ -160,14 +160,14 @@ published: true
                     changebackground(nextid);
                     changeicon(nextid);
                     window.location.href = "#" + url_fixes[nextid];
-                    var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
+                    var playId = $("#" + nextid + " .gifv-player")[0].classList[1];
                     playvideo('.'+playId);
                     next_id_number = nextid.slice(-1)
                     $('a').attr("class", "tooltip" + next_id_number);
                 }
                 break;
             case(id == 'prev'):
-                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                var div1vis = $(".left-div .info-left-div").filter(':visible'),
                     div2vis = $(".right-div .info-right-div").filter(':visible');
                 if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
                     div1vis.prev().show().next().hide();
@@ -177,14 +177,14 @@ published: true
                     changebackground(previd);
                     changeicon(previd);
                     window.location.href = "#" + url_fixes[previd];
-                    var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
+                    var playId = $("#" + previd + " .gifv-player")[0].classList[1];
                     playvideo('.'+playId);
                     prev_id_number = previd.slice(-1)
                     $('a').attr("class", "tooltip" + prev_id_number);
                 }
                 break;
             };
-        }); 
+        });
         var loop = getUrlParameter('loop');
         if (loop != undefined){
             if (loop != 0){
@@ -200,105 +200,105 @@ published: true
             $("#" + title_id).click();
         }
     });
-    
+
     function swapC(loop, url_fixes) {
         $('.infografika').each(function (ind, elem) {
             window.setTimeout(function () {
                 $(elem).click();
                 id = $(elem).attr('id');
                 id_number = id.slice(-1)
-                // changeicon('left-' + id); 
+                // changeicon('left-' + id);
                 // $(".info-right-div, .info-left-div").hide();
-                // $('#left-' + id + ", " + '#right-' + id ).show(); 
+                // $('#left-' + id + ", " + '#right-' + id ).show();
                 // playvideo('.div' + url_fixes[id]);
                 $(elem).attr("class", "tooltip"+ id_number + " infografika");
             }, (loop * 1000) * ind);
         });
     }
-    function playvideo(videoDivID) { 
+    function playvideo(videoDivID) {
         $(videoDivID).find('video').show();
-        $(videoDivID).find('video')[0].play();  
+        $(videoDivID).find('video')[0].play();
     }
-    function changeicon(divid) {   
-    if (divid == 'left-info1') { 
+    function changeicon(divid) {
+    if (divid == 'left-info1') {
         for (i=1; i<9; i++) {
         var id = i+1;
-        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info1 img').attr('src',('img/active-01.png')); 
+        $('#info1 img').attr('src',('img/active-01.png'));
     }
-    if (divid == 'left-info2') { 
+    if (divid == 'left-info2') {
         for (i=1; i<9; i++) {
         var id = i+1;
-        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info2 img').attr('src',('img/active-02.png')); 
+        $('#info2 img').attr('src',('img/active-02.png'));
     }
-    if (divid == 'left-info4') { 
+    if (divid == 'left-info4') {
         for (i=1; i<9; i++) {
         var id = i+1;
-        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info4 img').attr('src',('img/active-04.png')); 
+        $('#info4 img').attr('src',('img/active-04.png'));
     }
-    if (divid == 'left-info5') { 
+    if (divid == 'left-info5') {
         for (i=1; i<9; i++) {
         var id = i+1;
-        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info5 img').attr('src',('img/active-05.png')); 
+        $('#info5 img').attr('src',('img/active-05.png'));
     }
-    if (divid == 'left-info6') { 
+    if (divid == 'left-info6') {
         for (i=1; i<9; i++) {
         var id = i+1;
-        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info6 img').attr('src',('img/active-06.png')); 
+        $('#info6 img').attr('src',('img/active-06.png'));
         return false;
     }
-    if (divid == 'left-info7') { 
+    if (divid == 'left-info7') {
         for (i=1; i<9; i++) {
         var id = i+1;
-        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info7 img').attr('src',('img/active-07.png')); 
+        $('#info7 img').attr('src',('img/active-07.png'));
         return false;
     }
-    if (divid == 'left-info8') { 
+    if (divid == 'left-info8') {
         for (i=1; i<9; i++) {
         var id = i+1;
-        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info8 img').attr('src',('img/active-08.png')); 
+        $('#info8 img').attr('src',('img/active-08.png'));
         return false;
     }
-    if (divid == 'left-info3') { 
+    if (divid == 'left-info3') {
         for (i=1; i<9; i++) {
             var id = i+1;
-            $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+            $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png'));
         }
-        $('#info3 img').attr('src',('img/active-03.png')); 
+        $('#info3 img').attr('src',('img/active-03.png'));
         return false;
     }
- 
+
     }
-    function changebackground(divid) {   
-        if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
-        if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); } 
-        if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); } 
-        if (divid == 'left-info4') { $("body").css('background-color', '#b9b6ae'); } 
-        if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); } 
-        if (divid == 'left-info6') { $("body").css('background-color', '#121929'); } 
-        if (divid == 'left-info7') { $("body").css('background-color', '#01637A'); } 
-        if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
+    function changebackground(divid) {
+        if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); }
+        if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); }
+        if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); }
+        if (divid == 'left-info4') { $("body").css('background-color', '#b9b6ae'); }
+        if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); }
+        if (divid == 'left-info6') { $("body").css('background-color', '#121929'); }
+        if (divid == 'left-info7') { $("body").css('background-color', '#01637A'); }
+        if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); }
     }
     </script>
 </head>
 
 <body>
 
-<div class="content" id="content">               
-    <div class="container">                          
+<div class="content" id="content">
+    <div class="container">
         <div class="col-md-5 padding-right left-div" id="left-div">
             <div class="left-content info-left-div" id="left-info1" style="display:block;">
               <h2 style='color:#fff; font-weight:bold'>Vjetërsia e Veturave</h2>
@@ -309,8 +309,8 @@ published: true
                         <source type="video/mp4" src="videot/vjetersia_veturave.mp4" />
                     </video>
                     <img src="img/foto-video/1.png" width="446" height="252" alt="Vjetersia" id="gif" class="img-responsive"  />
-                </div>   
-                <h4>Mesatarja e vjetërsisë së veturave që qarkullojnë në Kosovë është 18 vite, apo 10 vite më shumë se sa mesatarja e veturave që qarkullojnë brenda Bashkimit Evropian.</h4>  
+                </div>
+                <h4>Mesatarja e vjetërsisë së veturave që qarkullojnë në Kosovë është 18 vite, apo 10 vite më shumë se sa mesatarja e veturave që qarkullojnë brenda Bashkimit Evropian.</h4>
             </div>
             <div class="left-content info-left-div" id="left-info2" style="display: none;">
                 <h2 style='color:#fff; font-weight:bold'>Importi i Veturave</h2>
@@ -320,8 +320,8 @@ published: true
                          <source type="video/mp4" src="videot/importi_veturave.mp4" />
                     </video>
                     <img src="img/foto-video/2.png" width="446" height="252" alt="Importi" class="img-responsive" />
-                </div>   
-                <h4>Në vitin 2014 për çdo veturë të re të importuar, janë importuar  16 vetura të përdorura.</h4>   
+                </div>
+                <h4>Në vitin 2014 për çdo veturë të re të importuar, janë importuar  16 vetura të përdorura.</h4>
             </div>
             <div class="left-content info-left-div" id="left-info3" style="display: none;">
                 <h2 style='color:#fff; font-weight:bold'>Të hyrat doganore nga veturat</h2>
@@ -331,8 +331,8 @@ published: true
                         <source type="video/mp4" src="videot/te_hyrat_doganore.mp4" />
                     </video>
                     <img src="img/foto-video/3.png" width="446" height="252" alt="Te hyrat" class="img-responsive" />
-                </div>   
-                <h4>Brenda dy viteve nga hyrja e vendimit në fuqi, Qeveria e Kosovës ka mbledhur rreth 21.8 milionë euro më shumë të hyra doganore nga veturat e përdorura, ndërsa rreth 3.2 milionë euro më shumë në vit nga veturat e reja.</h4>   
+                </div>
+                <h4>Brenda dy viteve nga hyrja e vendimit në fuqi, Qeveria e Kosovës ka mbledhur rreth 21.8 milionë euro më shumë të hyra doganore nga veturat e përdorura, ndërsa rreth 3.2 milionë euro më shumë në vit nga veturat e reja.</h4>
             </div>
             <div class="left-content info-left-div" id="left-info4" style="display: none;">
                 <h2 style='color:#fff; font-weight:bold'>Ndotja e ambientit</h2>
@@ -342,8 +342,8 @@ published: true
                         <source type="video/mp4" src="videot/ndotja_e_ambientit.mp4" />
                     </video>
                     <img src="img/foto-video/4.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
-                </div>   
-                <h4>Djegia e një kilogrami benzinë jep 2.9 kilogram CO₂, kurse e njëjta sasi e dizelit jep 3.1 kg CO₂. Kosova importon rreth 500 milionë litra karburante në vit, rrjedhimisht djegia e karburanteve prodhojnë rreth 1.5 milion ton CO₂ në vit. Me futjen e veturave të vjetra pa dyshim që  niveli i ndotjes do të rritet edhe më shumë.</h4>   
+                </div>
+                <h4>Djegia e një kilogrami benzinë jep 2.9 kilogram CO₂, kurse e njëjta sasi e dizelit jep 3.1 kg CO₂. Kosova importon rreth 500 milionë litra karburante në vit, rrjedhimisht djegia e karburanteve prodhojnë rreth 1.5 milion ton CO₂ në vit. Me futjen e veturave të vjetra pa dyshim që  niveli i ndotjes do të rritet edhe më shumë.</h4>
             </div>
             <div class="left-content info-left-div" id="left-info5" style="display: none;">
                 <h2 style='color:#fff; font-weight:bold'>Marka e Automjeteve</h2>
@@ -389,11 +389,11 @@ published: true
                         <source type="video/mp4" src="videot/lloji_i_motorit.mp4" />
                     </video>
                     <img src="img/foto-video/8.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
-                </div>  
+                </div>
             </div>
         </div>
          <div class="col-md-2">
-            <div class="middle-content"> 
+            <div class="middle-content">
                 <hr class="vertical-line-top">
                  <div class="prev" id="tooltipdiv" >
                     <a>
@@ -425,7 +425,7 @@ published: true
                     <img src="img/icon-05.png">
                     </a>
                 </div>
-                <div class="icon"> 
+                <div class="icon">
                     <a href="{{ site.baseurl }}#marka-e-automjeteve" id="info5" data-toggle="tooltip" class="red-tooltip infografika" title="Marka e Automjeteve" data-placement="top" >
                     <img src="img/icon-06.png">
                     </a>
@@ -439,8 +439,8 @@ published: true
                     <a href="{{ site.baseurl }}#regjistrimi-sipas-regjioneve" id="info7" data-toggle="tooltip" class="red-tooltip infografika" title="Regjistrimi i veturave sipas regjioneve" data-placement="top">
                     <img src="img/icon-08.png">
                     </a>
-                </div>            
-                <div class="icon"> 
+                </div>
+                <div class="icon">
                     <a href="{{ site.baseurl }}#lloji-i-motorit" id="info8" data-toggle="tooltip" class="red-tooltip infografika" title="Lloji i Motorit" data-placement="top" >
                     <img src="img/icon-09.png">
                     </a>
@@ -455,7 +455,7 @@ published: true
         </div>
         <div class="col-md-5 padding-right right-div" id="right-div">
             <div class="right-content info-right-div" id="right-info1" style="display:block;">
-              <h3>Mesatarja e vjetërsise së veturave të regjistruara në Kosovë 2010-2014</h3>
+              <h3>Mesatarja e vjetërsise së veturave të regjistruara në Kosovë 2010-2015</h3>
               <iframe  class=" highcharts-iframe img-responsive" src="//cloud.highcharts.com/embed/akuqef"  style="border: 0; width: 100%; height: 500px;"></iframe>
                 <h4>Rritjes së mesatares të vjetërsisë së veturave në masë të madhe i ka kontribuar vendimi i qeverisë i vitit 2011 për lejimin e importit të veturave të përdorura deri në 13 vite, nga 8 sa kishte qenë më herët.</h4>
             </div>
@@ -497,16 +497,16 @@ published: true
                 <div class="burimi">
                     <h4>Burimi: Ministria e Punëve të Brendshme</h4>
                 </div>
-            </div>  
+            </div>
             <div class="right-content info-right-div" id="right-info8" style="display: none;">
                 <h3>Importi i veturave të përdorura sipas llojit të motorit</h3>
                 <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/uxacon" style="border: 0; width: 100%; height: 500px;"></iframe>
                 <div class="burimi">
                     <h4>Burimi: Dogana e Kosovës</h4>
                 </div>
-            </div> 
+            </div>
 
-        </div> 
+        </div>
 
     </div>
 </div>
